@@ -3,189 +3,122 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shubham | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>About Me</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    /* Global Styles */
     body {
       margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background: #f8f9fa;
-      color: #202124;
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #222;
     }
 
-    a {
-      text-decoration: none;
-      color: #1a73e8;
-      transition: color 0.2s;
+    /* Navigation Bar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid #eee;
+      background: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
-    a:hover {
-      color: #1558b0;
-    }
-
-    /* Header */
-    header {
-      padding: 40px 20px;
-      text-align: center;
-      background: #ffffff;
-      border-bottom: 1px solid #e0e0e0;
-    }
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-      font-weight: 700;
-    }
-    header p {
-      font-size: 1.2rem;
-      color: #5f6368;
-    }
-    .cta-button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
-      font-size: 16px;
-      font-weight: 500;
-      color: #fff;
-      background-color: #1a73e8;
-      border-radius: 6px;
-      transition: background 0.3s;
-    }
-    .cta-button:hover {
-      background-color: #1558b0;
-    }
-
-    /* Section Styles */
-    section {
-      max-width: 1000px;
-      margin: 60px auto;
-      padding: 20px;
-    }
-    section h2 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-      font-weight: 500;
-      border-bottom: 2px solid #e0e0e0;
-      padding-bottom: 8px;
-    }
-
-    /* Cards */
-    .card-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
-    .card {
-      background: #ffffff;
-      border: 1px solid #e0e0e0;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      padding: 20px;
-      transition: transform 0.2s;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-    }
-    .card img {
-      max-width: 100%;
-      border-radius: 8px;
-      margin-bottom: 15px;
-    }
-    .card h3 {
+    nav .logo {
       font-size: 1.5rem;
-      margin-bottom: 8px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      white-space: nowrap;
     }
-    .card p {
-      font-size: 1rem;
-      color: #5f6368;
+    nav .social {
+      display: flex;
+      gap: 1.5rem;
+    }
+    nav .social a {
+      color: #222;
+      font-size: 1.4rem;
+      transition: color 0.3s;
+    }
+    nav .social a.linkedin:hover {
+      color: #0077b5; /* LinkedIn */
+    }
+    nav .social a.instagram:hover {
+      color: #e1306c; /* Instagram */
+    }
+    nav .social a.github:hover {
+      color: #333; /* GitHub */
     }
 
-    /* Footer */
-    footer {
+    /* Hero Section */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       text-align: center;
-      padding: 30px;
-      color: #5f6368;
-      border-top: 1px solid #e0e0e0;
-      background: #f1f3f4;
-      font-size: 0.9rem;
+      padding: 2rem 1rem;
+    }
+    .hero img {
+      max-width: 500px;
+      width: 100%;
+      border-radius: 12px;
+      margin-top: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    /* About Section */
+    .about {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+      text-align: center;
+    }
+    .about h2 {
+      font-size: 2.5rem;
+      font-weight: 900;
+      letter-spacing: 2px;
+      margin-bottom: 1rem;
+    }
+    .about p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #444;
+      margin-bottom: 1rem;
     }
   </style>
 </head>
 <body>
-
-  <!-- Header / Hero -->
-  <header>
-    <h1>Shubham</h1>
-    <p>Engineer | Developer | AI/ML Enthusiast</p>
-    <a href="#contact" class="cta-button">Contact Me</a>
-  </header>
-
-  <!-- About Me -->
-  <section id="about">
-    <h2>About Me</h2>
-    <div class="card">
-      <p>Hi, I’m Shubham — a Computer Science engineer passionate about AI, Web Development, and DevOps. I enjoy building scalable projects and solving real-world problems with technology.</p>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Shubham Chalak</div>
+    <div class="social">
+      <a href="https://www.linkedin.com/in/shubham-chalak-8877a9343?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/Shubhamchalak23" target="_blank" class="github"><i class="fab fa-github"></i></a>
+      <a href="https://www.instagram.com/shubhchalak?igsh=MXNrZWh6cm96cnRmcw==" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
     </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="shubham.png" alt="Shubham Chalak">
   </section>
 
-  <!-- Skills -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="card-container">
-      <div class="card">Python, Java, Bash, SQL</div>
-      <div class="card">HTML, CSS, JavaScript, React</div>
-      <div class="card">Linux, Docker, CI/CD</div>
-      <div class="card">AI/ML, TensorFlow, Data Analysis</div>
-    </div>
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2>ABOUT ME</h2>
+    <p>
+      Hi, I’m <b>Shubham Chalak</b>. I’m passionate about technology and love building creative, functional, and efficient digital solutions. 
+      Whether it’s developing websites, exploring software development, or diving into cybersecurity and cloud computing, 
+      I always enjoy learning and growing in this journey.
+    </p>
+    <p>
+      I’m curious by nature, a problem solver at heart, and I enjoy experimenting with new ideas. 
+      Outside of coding, I like exploring new tools and tech trends, staying active, and working on personal projects that challenge me. 
+    </p>
+    <p>
+      My goal is to continue improving my skills and contribute to building impactful solutions in the digital world.
+    </p>
   </section>
-
-  <!-- Projects -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="card-container">
-      <div class="card">
-        <h3>Anti-Piracy System</h3>
-        <p>Developed a secure platform to prevent OTT content piracy using encryption and secure execution.</p>
-        <a href="#" class="cta-button">View Project</a>
-      </div>
-      <div class="card">
-        <h3>Health Monitoring Wearable</h3>
-        <p>Designed a cost-effective wearable tracking pulse and temperature with cloud syncing and ML insights.</p>
-        <a href="#" class="cta-button">View Project</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Certifications -->
-  <section id="certifications">
-    <h2>Certifications</h2>
-    <div class="card-container">
-      <div class="card">
-        <img src="images/cert1.png" alt="Certificate 1">
-        <h3>Google Cloud Arcade</h3>
-        <a href="#" class="cta-button">View Certificate</a>
-      </div>
-      <div class="card">
-        <img src="images/cert2.png" alt="Certificate 2">
-        <h3>Cisco Cybersecurity Essentials</h3>
-        <a href="#" class="cta-button">View Certificate</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <div class="card">
-      <p>Email: <a href="mailto:shubham@example.com">shubham@example.com</a></p>
-      <p>LinkedIn: <a href="#">linkedin.com/in/shubham</a></p>
-      <p>GitHub: <a href="#">github.com/shubham</a></p>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    © 2025 Shubham | All Rights Reserved
-  </footer>
-
 </body>
 </html>
